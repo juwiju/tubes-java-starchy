@@ -3,6 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/C:/kk/StarchyTubes/StarchyTubes/src/starchytubes/StarchyTubes.java</file>
             <file>file:/C:/kk/StarchyTubes/StarchyTubes/src/org/itenas/is/oop/starchy/utils/ConnectorManager.java</file>
             <file>file:/C:/kk/StarchyTubes/StarchyTubes/src/org/itenas/is/oop/starchy/utils/TestConnectionDb.java</file>
@@ -16,7 +17,27 @@
             <file>file:/C:/kk/StarchyTubes/StarchyTubes/src/org/itenas/is/oop/starchy/views/NewJFrame.java</file>
             <file>file:/C:/kk/StarchyTubes/StarchyTubes/src/org/itenas/is/oop/starchy/views/KelolaMenu.java</file>
             <file>file:/C:/kk/StarchyTubes/StarchyTubes/src/org/itenas/is/oop/starchy/controllers/DetailPaketController.java</file>
-            <file>file:/C:/kk/StarchyTubes/StarchyTubes/src/org/itenas/is/oop/starchy/views/kelolaPaket.java</file>
+            <file>file:/C:/kk/StarchyTubes/StarchyTubes/src/org/itenas/is/oop/starchy/views/KelolaPaket.java</file>
+=======
+            <file>file:/C:/Users/Anis%20Sarah/OneDrive/StarchyTubes/starchy/starchy/StarchyTubes/src/org/itenas/is/oop/starchy/models/IPembelian.java</file>
+            <file>file:/C:/Users/Anis%20Sarah/OneDrive/StarchyTubes/starchy/starchy/StarchyTubes/src/org/itenas/is/oop/starchy/controllers/MenuPaketController.java</file>
+            <file>file:/C:/Users/Anis%20Sarah/OneDrive/StarchyTubes/starchy/starchy/StarchyTubes/src/org/itenas/is/oop/starchy/controllers/ControllerTransaksi.java</file>
+            <file>file:/C:/Users/Anis%20Sarah/OneDrive/StarchyTubes/starchy/starchy/StarchyTubes/src/org/itenas/is/oop/starchy/models/Transaksi.java</file>
+            <file>file:/C:/Users/Anis%20Sarah/OneDrive/StarchyTubes/starchy/starchy/StarchyTubes/src/org/itenas/is/oop/starchy/models/TransaksiDetail.java</file>
+            <file>file:/C:/Users/Anis%20Sarah/OneDrive/StarchyTubes/starchy/starchy/StarchyTubes/src/org/itenas/is/oop/starchy/models/Transaksi_Metode.java</file>
+            <file>file:/C:/Users/Anis%20Sarah/OneDrive/StarchyTubes/starchy/starchy/StarchyTubes/src/org/itenas/is/oop/starchy/controllers/ControllerTransaksiDetail.java</file>
+            <file>file:/C:/Users/Anis%20Sarah/OneDrive/StarchyTubes/starchy/starchy/StarchyTubes/src/org/itenas/is/oop/starchy/views/ViewTransaksi.java</file>
+            <file>file:/C:/Users/Anis%20Sarah/OneDrive/StarchyTubes/starchy/starchy/StarchyTubes/src/org/itenas/is/oop/starchy/utils/ConnectorManager.java</file>
+            <file>file:/C:/Users/Anis%20Sarah/OneDrive/StarchyTubes/starchy/starchy/StarchyTubes/src/org/itenas/is/oop/starchy/models/User.java</file>
+            <file>file:/C:/Users/Anis%20Sarah/OneDrive/StarchyTubes/starchy/starchy/StarchyTubes/src/org/itenas/is/oop/starchy/models/Menu.java</file>
+            <file>file:/C:/Users/Anis%20Sarah/OneDrive/StarchyTubes/starchy/starchy/StarchyTubes/src/org/itenas/is/oop/starchy/models/MenuSingle.java</file>
+            <file>file:/C:/Users/Anis%20Sarah/OneDrive/StarchyTubes/starchy/starchy/StarchyTubes/src/org/itenas/is/oop/starchy/models/MenuPaket.java</file>
+            <file>file:/C:/Users/Anis%20Sarah/OneDrive/StarchyTubes/starchy/starchy/StarchyTubes/src/org/itenas/is/oop/starchy/models/DetailPaket.java</file>
+            <file>file:/C:/Users/Anis%20Sarah/OneDrive/StarchyTubes/starchy/starchy/StarchyTubes/src/org/itenas/is/oop/starchy/controllers/DetailPaketController.java</file>
+            <file>file:/C:/Users/Anis%20Sarah/OneDrive/StarchyTubes/starchy/starchy/StarchyTubes/src/org/itenas/is/oop/starchy/views/KelolaMenu.java</file>
+            <file>file:/C:/Users/Anis%20Sarah/OneDrive/StarchyTubes/starchy/starchy/StarchyTubes/src/org/itenas/is/oop/starchy/views/KelolaPaket.java</file>
+            <file>file:/C:/Users/Anis%20Sarah/OneDrive/StarchyTubes/starchy/starchy/StarchyTubes/src/org/itenas/is/oop/starchy/views/NewJFrame.java</file>
+>>>>>>> transaksi
         </group>
     </open-files>
 </project-private>
