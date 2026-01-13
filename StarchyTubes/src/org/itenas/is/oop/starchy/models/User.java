@@ -1,14 +1,23 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+<<<<<<< HEAD
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+=======
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+>>>>>>> 8c03bb72143c29b6cf3632c7f4f7c3791da026b5
  */
 package org.itenas.is.oop.starchy.models;
 
 /**
  *
+<<<<<<< HEAD
  * @author faradilla maudy
  */
 
+=======
+ * @author Anis Sarah
+ */
+>>>>>>> 8c03bb72143c29b6cf3632c7f4f7c3791da026b5
 public class User {
     private int user_id;
     private String username;
