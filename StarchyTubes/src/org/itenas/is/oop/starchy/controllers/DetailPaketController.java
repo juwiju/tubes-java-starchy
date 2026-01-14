@@ -52,25 +52,26 @@ public class DetailPaketController {
         }
     }
 
-    public List<DetailPaket> showByPaket(String paketId) {
-        List<DetailPaket> list = new ArrayList<>();
+   public List<DetailPaket> showByPaket(String paketId) {
+    List<DetailPaket> list = new ArrayList<>();
+    // WAJIB pakai WHERE dan tanda tanya (?) agar 'paketId' punya tempat
+    String sql = "SELECT * FROM detail_paket WHERE paket_id = ?"; 
 
-        String sql = "SELECT * FROM detail_paket WHERE paket_id=?";
+    try (PreparedStatement ps = con.prepareStatement(sql)) {
+        ps.setString(1, paketId); // Parameter index 1 sekarang valid karena ada tanda tanya
+        ResultSet rs = ps.executeQuery();
 
-        try (PreparedStatement ps = con.prepareStatement(sql)) {
-            ps.setString(1, paketId);
-            ResultSet rs = ps.executeQuery();
-
-            while (rs.next()) {
-                list.add(new DetailPaket(
-                    rs.getString("paket_id"),
-                    rs.getString("menu_id"),
-                    rs.getInt("quantity")
-                ));
-            }
-        } catch (SQLException e) {
-            System.out.println(e.getMessage());
+        while (rs.next()) {
+            DetailPaket detail = new DetailPaket(
+                rs.getString("paket_id"),
+                rs.getString("menu_id"), 
+                rs.getInt("quantity") // Pastikan pakai 'quantity' sesuai DB
+            );
+            list.add(detail);
         }
-        return list;
+    } catch (SQLException e) {
+        System.out.println("Error di showByPaket: " + e.getMessage());
     }
+    return list;
+}
 }

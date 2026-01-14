@@ -30,7 +30,7 @@ public class MenuPaketController implements InterfaceCrud<MenuPaket> {
 
     @Override
     public boolean create(MenuPaket paket) {
-        String sql = "INSERT INTO menu_paket (menu_id, menu_nama, menu_harga) VALUES (?, ?, ?)";
+        String sql = "INSERT INTO menu_paket (paket_id, paket_nama, paket_harga) VALUES (?, ?, ?)";
 
         try (PreparedStatement ps = con.prepareStatement(sql)) {
             ps.setString(1, paket.getMenu_id());
@@ -45,7 +45,7 @@ public class MenuPaketController implements InterfaceCrud<MenuPaket> {
     }
     @Override
     public boolean update(String id, MenuPaket paket) {
-        String sql = "UPDATE menu_paket SET menu_nama=?, menu_harga=? WHERE menu_id=?";
+        String sql = "UPDATE menu_paket SET paket_nama=?, paket_harga=? WHERE paket_id=?";
 
         try (PreparedStatement ps = con.prepareStatement(sql)) {
             ps.setString(1, paket.getMenu_nama());
@@ -68,9 +68,9 @@ public class MenuPaketController implements InterfaceCrud<MenuPaket> {
 
             while (rs.next()) {
                 list.add(new MenuPaket(
-                    rs.getString("menu_id"),
-                    rs.getString("menu_nama"),
-                    rs.getInt("menu_harga")
+                    rs.getString("paket_id"),
+                    rs.getString("paket_nama"),
+                    rs.getInt("paket_harga")
                 ));
             }
         } catch (SQLException e) {
@@ -81,7 +81,7 @@ public class MenuPaketController implements InterfaceCrud<MenuPaket> {
 
     @Override
     public boolean delete(String id) {
-      String sql = "DELETE FROM menu_paket WHERE menu_id=?";
+      String sql = "DELETE FROM menu_paket WHERE paket_id=?";
 
         try (PreparedStatement ps = con.prepareStatement(sql)) {
             ps.setString(1, id);

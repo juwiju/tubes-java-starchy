@@ -79,7 +79,7 @@ public class ControllerTransaksiDetail {
 
         String sql = "SELECT menu_harga FROM menu_single WHERE menu_id = ? " +
                      "UNION " +
-                     "SELECT paket_harga FROM menu_bundling WHERE paket_id = ?"; 
+                     "SELECT paket_harga FROM menu_paket WHERE paket_id = ?"; 
 
         try (Connection con = conMan.connectDb(); 
              PreparedStatement ps = con.prepareStatement(sql)) {

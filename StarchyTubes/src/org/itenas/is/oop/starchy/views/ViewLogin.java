@@ -106,12 +106,12 @@ public class ViewLogin extends javax.swing.JFrame {
                 .addGap(15, 15, 15)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(cbPassword)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(jLabel2)
-                        .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(txtUsername, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel1)))
-                .addContainerGap(106, Short.MAX_VALUE))
+                        .addComponent(jLabel1)
+                        .addComponent(txtPassword, javax.swing.GroupLayout.DEFAULT_SIZE, 181, Short.MAX_VALUE)
+                        .addComponent(txtUsername)))
+                .addContainerGap(141, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -152,6 +152,9 @@ public class ViewLogin extends javax.swing.JFrame {
         if (stat == 1) {
             JOptionPane.showMessageDialog(null, "Login Berhasil", "Pesan",
                     JOptionPane.INFORMATION_MESSAGE);
+            NewJFrame dash = new NewJFrame();
+    dash.setVisible(true);
+    this.dispose();
             
         } else {
             JOptionPane.showMessageDialog(null, "Username atau Password yang anda masukan salah",
